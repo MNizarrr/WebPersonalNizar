@@ -7,6 +7,7 @@ body, h1, h2, p, a {
 }
 
 .jumbotron {
+    background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-digital-geometry-education-math-formula-background-on-green-blackboard-picture-image_1457825.jpg')
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     text-align: center;
