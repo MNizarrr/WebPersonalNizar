@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon</title>
+    <link rel="stylesheet" href="pipas.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Jejak Karbon 🌱</h1>
+        <p class="subtitle">Hitung jejak karbonmu dan bantu selamatkan bumi!</p>
+        
+        <div class="form-group">
+            <label for="item">Pilih Barang:</label>
+            <select id="item">
+                <option value="komputer">Komputer</option>
+                <option value="kulkas">Kulkas</option>
+                <option value="mesin_cuci">Mesin Cuci</option>
+                <option value="kipas_angin">Kipas Angin</option>
+                <option value="televisi">Televisi</option>
+                <option value="rice_cooker">Rice Cooker</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Jumlah Barang:</label>
+            <input type="number" id="quantity" min="1" value="1" placeholder="Masukkan jumlah">
+        </div>
+
+        <div class="form-group">
+            <label for="hours">Durasi Penggunaan (jam):</label>
+            <input type="number" id="hours" min="0" placeholder="Masukkan jam">
+        </div>
+
+        <button onclick="hitungJejakKarbon()">Hitung Jejak Karbon</button>
+
+        <div class="result">
+            <h2>Hasil Perhitungan:</h2>
+            <p id="hasil">-</p>
+            <canvas id="carbonChart"></canvas>
+        </div>
+    </div>
+
+    <script src="pipas.js"></script>
+</body>
+</html>
